@@ -1,0 +1,14 @@
+ Etape de projet !
+
+> Start zookeeper zookeeper-server-start.sh config/zookeeper.properties 
+> Start Kafka Server   kafka-server-start.sh config/server.properties 
+> check all topics in a particular broker (create one"s" if needed)  bin/kafka-topics.sh --describe --topic topic1 --bootstrap-server localhost:9092
+> create a topic <bin/kafka-topics.sh --create --topic topic2 --bootstrap-server localhost:9092>
+> create producers.py (IOt simulation script) python3 producer.py
+> Read consumer data "test: bin/kafka-console-consumer.sh --topic topic1 --from-beginning --bootstrap-server localhost:9092"
+
+> Graphana:port 3000
+> InfluxDB:port 8086 
+
+
+
