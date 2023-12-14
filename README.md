@@ -40,6 +40,13 @@ python3 consumer.py
 
 Now you can Visualize data by creating Dashboards on Grafana [localhost:8000/](http://localhost:8000)
 
+### Dashboards
+#### **Temperature dashboard**
+> ![Temperature dashboard](./images/temperature.png)
+#### **Humidity dashboard**
+> ![Humidity dashboard](./images/humidity.png)
+#### **Co2 concentration dashboard**
+> ![CO2 concentration dashboard](./images/co2.png)
 
 ## Authors
 
