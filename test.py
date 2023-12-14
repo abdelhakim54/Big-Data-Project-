@@ -1,11 +1,12 @@
 import influxdb_client
 from influxdb_client.client.write_api import SYNCHRONOUS
+from decouple import config
 
-bucket = "test"
-org = "ensao"
-token = "qm8BGXcwKTsCj8UtrtEGOpcyb_1n5FJw-qC-JnbpBSTlDwWxkwCyGkk5nJ_-6F8OA2EZua_G_L3VBBSWHGu_JQ=="
-# Store the URL of your InfluxDB instance
-url="http://localhost:8086"
+bucket = config("bucket")
+org = config("org")
+token = config("token")
+url=config("url")
+
 
 client = influxdb_client.InfluxDBClient(
     url=url,
